@@ -277,5 +277,5 @@ def test_service_client_only_node_gets_diagram_and_edge() -> None:
     )
 
     assert "```mermaid" in rendered
-    assert "SC0:::hidden o--o|~/enable_left_turn_indicator| NODE" in rendered
+    assert "NODE o--o|~/enable_left_turn_indicator| SC0:::hidden" in rendered
     assert "#### Service Clients" in rendered
